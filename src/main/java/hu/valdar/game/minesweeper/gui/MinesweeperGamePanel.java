@@ -67,8 +67,6 @@ public class MinesweeperGamePanel extends JPanel {
                 button.setText(" ");
             }
         }
-        revalidate();
-        repaint();
     }
 
     private void setupGamePanel() {
@@ -87,6 +85,8 @@ public class MinesweeperGamePanel extends JPanel {
                 add(button);
             }
         }
+        revalidate();
+        repaint();
     }
 
     private final MouseListener mouseListener = new MouseAdapter() {

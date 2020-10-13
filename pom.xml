@@ -12,11 +12,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>13</java.version>
+        <java.version>15</java.version>
 
-        <flatlaf.version>0.28</flatlaf.version>
+        <flatlaf.version>0.43</flatlaf.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-shade-plugin.version>3.2.2</maven-shade-plugin.version>
+        <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
     </properties>
 
     <dependencies>
@@ -52,9 +52,8 @@
                         </goals>
                         <configuration>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>hu.valdar.hu.valdar.game.minesweeper.Boot</mainClass>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>hu.valdar.game.minesweeper.Boot</mainClass>
                                 </transformer>
                             </transformers>
                             <finalName>${project.artifactId}</finalName>
