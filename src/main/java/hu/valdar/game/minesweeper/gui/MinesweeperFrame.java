@@ -19,7 +19,6 @@ public class MinesweeperFrame extends JFrame {
         this.logic = logic;
         setTitle(MinesweeperConstants.TITLE);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setLayout(new BorderLayout());
         setSize(MinesweeperConstants.FRAME_WIDTH, MinesweeperConstants.FRAME_HEIGHT);
         setPreferredSize(new Dimension(MinesweeperConstants.FRAME_WIDTH, MinesweeperConstants.FRAME_HEIGHT));
         setResizable(false);
