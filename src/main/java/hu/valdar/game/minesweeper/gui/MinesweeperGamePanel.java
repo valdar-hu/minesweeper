@@ -93,8 +93,8 @@ public class MinesweeperGamePanel extends JPanel {
 
         @Override
         public void mouseReleased(MouseEvent event) {
-            Object eventSource = event.getSource();
             if (SwingUtilities.isRightMouseButton(event)) {
+                Object eventSource = event.getSource();
                 GameStage stage = logic.getStage();
                 if (stage != GameStage.PLAYING || !(eventSource instanceof TabletopGameButton)) {
                     return;

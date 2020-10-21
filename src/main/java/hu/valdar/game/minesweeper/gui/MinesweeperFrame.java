@@ -19,10 +19,8 @@ public class MinesweeperFrame extends JFrame {
         this.logic = logic;
         setTitle(MinesweeperConstants.TITLE);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setSize(MinesweeperConstants.FRAME_WIDTH, MinesweeperConstants.FRAME_HEIGHT);
         setPreferredSize(new Dimension(MinesweeperConstants.FRAME_WIDTH, MinesweeperConstants.FRAME_HEIGHT));
         setResizable(false);
-        setLocationRelativeTo(null);
 
         setJMenuBar(new MinesweeperMenuBar());
 
@@ -31,6 +29,8 @@ public class MinesweeperFrame extends JFrame {
         getContentPane().add(infoPanel, BorderLayout.NORTH);
         getContentPane().add(minesweeperGamePanel, BorderLayout.CENTER);
         pack();
+
+        setLocationRelativeTo(null);
     }
 
     private class MinesweeperMenuBar extends JMenuBar {
